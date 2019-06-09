@@ -1,0 +1,398 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%
+}
+
+
+/*CSS for navi bar*/
+
+#navi {
+    display: grid;
+    grid-template-columns: 5% 75% 5% 5% 5% 5%;
+    padding-right: 50px;
+    padding-left: 50px;
+    position: fixed;
+    background-color: transparent;
+    width: 100%;
+    top: 0;
+    z-index: 2
+}
+
+.logoDiv {
+    margin: 27%;
+}
+
+div#navi img {
+    width: 60px;
+    height: 30px;
+}
+
+.navGrid {
+    display: grid;
+    grid-template-rows: 0% auto;
+    justify-content: center;
+}
+
+.boxLinks {
+    cursor: pointer;
+}
+
+div.navGrid a {
+    margin: auto;
+    margin-top: 50%;
+}
+
+.links {
+    font-family: 'Josefin Sans', sans-serif;
+    width: 60px;
+    text-align: -webkit-center;
+    margin: auto;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: white;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.naviTitle1 {
+    font-family: 'Playfair Display', sans-serif;
+    color: white;
+    font-size: 47px;
+    margin: 1%;
+}
+
+.main-grid {
+    height: 100%;
+    width: 90px;
+    position: fixed;
+    z-index: 1;
+    top: 35%;
+    left: 1436px;
+}
+
+.morphSquare {
+    width: 30px;
+    height: 30px;
+}
+
+.morphSquare4 {
+    width: 30px;
+    height: 25px;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+}
+
+.logos {
+    visibility: hidden;
+}
+
+#welcomeDiv {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: min-content min-content min-content;
+    justify-content: space-around;
+    background-image: url("../images/nick.jpg");
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.typeText {
+    height: 60px;
+}
+
+#welcome {
+    font-family: 'Playfair Display', serif;
+    margin-top: 100px;
+    color: white;
+    text-align: center;
+}
+
+#thanks {
+    font-family: 'Playfair Display', serif;
+    color: white;
+    text-align: center;
+}
+
+#questions {
+    font-family: 'Playfair Display', serif;
+    color: white;
+    text-align: center;
+}
+
+.arrowDiv {
+    text-align: center;
+}
+
+#dArrow {
+    width: 150px;
+    height: 90px;
+}
+
+#workDiv {
+    width: 100%;
+    height: auto;
+    padding-bottom: 10%;
+}
+
+.aboutMe {
+    background-color: #eaeaeaea;
+    height: 500px;
+    display: grid;
+}
+
+div.aboutMe h3 {
+    text-align: center;
+    margin: auto;
+    font-family: "Playfair Display", sans-serif;
+    line-height: 50px;
+    letter-spacing: 3px;
+}
+
+#workTitleDiv {
+    padding-top: 100px;
+    grid-column: 1 / 4;
+    margin: auto;
+    text-align: left;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+#gridWorks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 400px));
+    justify-content: center;
+    grid-column-gap: 20px;
+}
+
+.myWorkTitle {
+    font-family: "Playfair Display", sans-serif;
+}
+
+.myWorksSub {
+    font-family: "Libre Baskerville", serif;
+    color: slategrey;
+}
+
+.myWorks {
+    padding-bottom: 10px
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 100%;
+}
+
+.worksImageDiv {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-content: center
+}
+
+.worksImage {
+    width: 100%;
+    height: 180px;
+    transition: transform 0.5s, filter 0.5s ease-in-out;
+    filter: brightness(100%);
+    transform-origin: center center;
+}
+
+.worksImage:hover {
+    filter: brightness(50%);
+    transform: scale(1.3);
+}
+
+.worksContainer {
+    text-align: -webkit-center;
+}
+
+#expertDiv {
+    background-image: url("../images/keyboard.jpg");
+    background-position: center;
+    height: 100%;
+}
+
+#expertiseDiv {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 480px));
+    grid-template-rows: auto auto;
+    justify-content: space-around;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.expertDiv {
+    grid-column: 1 / 4;
+    text-align: center;
+    margin: auto;
+    padding-top: 100px;
+}
+
+div.expertDiv h1 {
+    font-family: "Playfair Display", sans-serif;
+    color: white;
+}
+
+div.expertDiv p {
+    font-family: "Playfair Display", sans-serif;
+    color: white;
+}
+
+.mottoDiv {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+}
+
+div.mottoDiv h2 {
+    font-family: "Josefin Sans", sans-serif;
+    color: white;
+    text-align: center;
+}
+
+div.mottoDiv p {
+    text-align: center;
+    color: white;
+    width: 300px;
+}
+
+.expertImgs {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-top: 55px;
+}
+
+#contactDiv {
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 600px));
+    grid-template-rows: auto auto;
+    justify-content: center;
+    grid-column-gap: 100px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+.contactTitleDiv {
+    margin: auto;
+    text-align: left;
+    width: 100%;
+}
+
+.contactTitle {
+    font-family: "Playfair Display", sans-serif;
+}
+
+.contactSub {
+    font-family: "Libre Baskerville", serif;
+    color: slategrey;
+    width: 50%;
+}
+
+.socialTitleDiv {
+    margin: auto;
+    text-align: left;
+    margin-top: 0;
+    width: 100%;
+}
+
+.socialTitle {
+    font-family: "Playfair Display", sans-serif;
+    text-align: center;
+}
+
+.socialDiv {
+    margin: auto;
+}
+
+.socialLinksDiv {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+    grid-row-gap: 30px;
+}
+
+.contactLinks {
+    width: 90px;
+    height: 90px;
+}
+
+.socialLinks {
+    font-family: "Playfair Display", sans-serif;
+    display: inline;
+    padding-left: 30px;
+    font-size: 30px;
+}
+
+.footerDiv {
+    background-color: #EAEAEAEA;
+    width: 100%;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    margin: auto;
+    justify-content: center;
+}
+
+div.footerDiv P {
+    margin: auto;
+}
+
+#naviTitle2 {
+    font-family: 'Great Vibes', cursive;
+    color: black;
+    font-size: 50px;
+    margin: auto;
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 1300px) {
+    .contactTitleDiv {
+        text-align: -webkit-center;
+        margin: auto;
+    }
+    .contactForm {
+        text-align: center;
+        padding-bottom: 100px;
+    }
+}
+
+@media only screen and (max-width: 861px) {
+    .arrowDiv {
+        padding-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #navi {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+    .navGrid {
+        display: none;
+    }
+    .logoDiv {
+        margin: auto;
+    }
+    .naviTitle1 {
+        text-align: -webkit-center;
+    }
+    #welcomeDiv {
+        padding-top: 100px;
+        grid-row-gap: 50px;
+    }
+    #expertDiv {
+        height: auto;
+    }
+}
